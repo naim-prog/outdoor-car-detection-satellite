@@ -1,0 +1,12 @@
+[project]
+name = "outdoot-car-detection-satellite"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "notebook>=7.6.2",
+    "opencv-python>=5.0.0.93",
+    "sahi>=0.12.6",
+    "ultralytics>=8.4.154",
+]
