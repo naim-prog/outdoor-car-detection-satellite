@@ -18,7 +18,11 @@ To improve this I Auto-labeled +1900 images and manually reinforce and improve t
 
 21/09/2026 -> 22/09/2026 - Bulk download of +1000 satellite images from CNIG of the province of Cadiz
 
-25/09/2026 -> xx/xx/xxxx - Auto-labeling and manual tweaking of +1900 images (1024x1024)
+25/09/2026 -> 29/09/2026 - Auto-labeling and manual tweaking of +1900 images (1024x1024). Finally, I discard many images because they where many empty space (water, blurred images, black, grass)
+
+29/09/2026 -> 30/09/2026 - Testing different training models (freezing layers, epochs, etc)
+
+30/09/2026 -> xx/xx/xxxx - Converting the 90GB raw satellite images to a better format for web viewing without dealing with TB's of data (lol)
 
 # Results
 
