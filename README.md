@@ -22,7 +22,10 @@ To improve this I Auto-labeled +1900 images and manually reinforce and improve t
 
 29/09/2026 -> 30/09/2026 - Testing different training models (freezing layers, epochs, etc)
 
-30/09/2026 -> xx/xx/xxxx - Converting the 90GB raw satellite images to a better format for web viewing without dealing with TB's of data (lol)
+30/09/2026 -> 15/10/2026 - Execution of command `gdal_translate` to create MBTiles file.
+
+15/10/2026 -> xx/xx/xxxx - Execution of command `gdaladdo` to add different zoom levels to the MBTiles file.
+
 
 # Results
 
