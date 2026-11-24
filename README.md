@@ -22,29 +22,7 @@ The process was split between 2 phases:
 
 # Timeline
 
-17/09/2026 -> 19/09/2026 - Start testing different YOLO OBB model (8x, 11x, 26x) trained with DOTAv1.0 (aerial images) that fits the use case I'm looking for.
-
-21/09/2026 -> 22/09/2026 - Bulk download of +1000 satellite images from CNIG of the province of Cadiz.
-
-25/09/2026 -> 29/09/2026 - Auto-labeling and manual tweaking of +1900 images (1024x1024). Finally, I discard many images because they where many empty space (water, blurred images, black, grass) and endup with ±1100 images.
-
-29/09/2026 -> 30/09/2026 - Testing different training models (freezing layers, epochs, etc).
-
-30/09/2026 -> 15/10/2026 - Execution of command `gdal_translate` to create MBTiles file.
-
-15/10/2026 -> 21/10/2026 - Execution of command `gdaladdo` to add different zoom levels to the MBTiles file.
-
-21/10/2026 -> 23/10/2026 - Sanitizing MBTiles file (reducing size by deleting zoom levels), conversion to PMTiles and web testing.
-
-24/10/2026 -> 02/11/2026 - Auto-labeling and manual tweaking of +600 images (1024x1024). Endup with ±1800 images (80% train and 20% val).
-
-03/11/2026 -> 07/11/2026 - Inference on the hole dataset with YOLO26x Base model.
-
-07/11/2026 -> 15/11/2026 - Fine-tuning YOLO OBB model with own dataset.
-
-15/11/2026 -> 22/11/2026 - Inference on the hole dataset with YOLO26x Finetuned model.
-
-24/11/2026 -> 24/11/2026 - Exporting results on `test` dataset
+![Timeline of the project](./images/project-timeline.svg)
 
 # Results
 
