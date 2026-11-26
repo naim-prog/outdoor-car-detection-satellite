@@ -3,8 +3,8 @@ import glob
 from concurrent.futures import ProcessPoolExecutor
 import subprocess
 
-INPUT_DIR  = r"E:\datasets\outdoor-car-detection-satellite\original"
-OUTPUT_DIR = r"E:\datasets\outdoor-car-detection-satellite\epsg_3857"
+INPUT_DIR  = r"X:\datasets\outdoor-car-detection-satellite\original"
+OUTPUT_DIR = r"X:\datasets\outdoor-car-detection-satellite\epsg_3857"
 
 def process_file(filepath):
     filename = os.path.splitext(os.path.basename(filepath))[0] + ".vrt"
@@ -12,7 +12,7 @@ def process_file(filepath):
     
     if os.path.exists(out_path):
         return
-    
+
     # EPSG:3857 on VRT format
     cmd = [
         "gdalwarp",
@@ -23,7 +23,7 @@ def process_file(filepath):
         "-dstnodata", "0",
         filepath, out_path
     ]
-    
+
     subprocess.run(cmd, check=True)
 
 if __name__ == "__main__":
@@ -36,4 +36,3 @@ if __name__ == "__main__":
         list(executor.map(process_file, files))
 
     print("Completed")
-
